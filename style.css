@@ -1,215 +1,61 @@
-/* Reset some default styles */
-body,
-div,
-h1,
-h2,
-h3,
-p,
-ul,
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-  padding: 0;
-}
-
-/* Set up the body */
+/* Estilos Generales */
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* Links */
-a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Header */
-#fh5co-header-section {
-  background: #fff;
-  padding: 20px 0;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-#fh5co-logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-/* Navigation */
-#fh5co-menu-wrap {
-  float: right;
-}
-
-.sf-menu {
-  list-style-type: none;
-}
-
-.sf-menu li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.sf-menu a {
-  color: #333;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-/* Slider */
-#fh5co-hero {
-  position: relative;
-  overflow: hidden;
-}
-
-.flexslider {
-  margin-bottom: 0;
-}
-
-.flexslider .slides li {
-  position: relative;
-}
-
-/* Popular Properties Section */
-#fh5co-popular-properties,
-#fh5co-properties {
-  padding: 50px 0;
-}
-
-.fh5co-property {
-  display: block;
-  position: relative;
-  background-size: cover;
-  background-position: center center;
-  height: 300px;
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
-  position: relative;
-}
-
-.status {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background: #3498db;
-  color: #fff;
-  padding: 5px 10px;
-  font-weight: bold;
-}
-
-.prop-details {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-}
-
-.price {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-/* Newest Properties Section */
-.property {
-  margin-bottom: 30px;
-}
-
-.list-details {
-  list-style-type: none;
-  margin-bottom: 10px;
-}
-
-.list-details li {
-  display: inline-block;
-  margin-right: 10px;
-  font-weight: bold;
-}
-
-.property-details h3 {
-  margin-top: 10px;
-}
-
-.property-details .price {
-  display: block;
-  font-size: 20px;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.address {
-  display: block;
-  margin-top: 10px;
-  color: #777;
-}
-
-/* Contact Section */
-#fh5co-contact {
-  position: relative;
-}
-
-.half-contact {
-  width: 50%;
-  float: left;
-  padding: 100px;
-}
-
-.half-bg {
-  width: 50%;
-  float: left;
-  background-size: cover;
-  background-position: center center;
-  height: 700px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Footer */
-#footer {
-  background: #333;
-  color: #fff;
-  padding: 30px 0;
-}
-
-.section-title {
-  color: #3498db;
-}
-
-#footer ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#footer li {
-  margin-bottom: 10px;
-}
-
-#footer a {
-  color: #fff;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .sf-menu li {
-    display: block;
-    margin: 0;
-  }
-
-  .sf-menu a {
-    display: block;
-    padding: 10px 0;
-  }
-
-  #fh5co-menu-wrap {
-    float: none;
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    margin-top: 20px;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative; /* Añade posición relativa */
+    margin-top: auto; /* Añade margen superior automático para ajustarse al final de la página */
+}
+
+/* Establece el fondo negro para que se extienda por todo el ancho de la pantalla */
+footer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    z-index: -1; /* Coloca el fondo detrás del contenido del footer */
+}
+
+footer .contact-info,
+footer .social-icons {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+}
+
+footer .social-icons {
+    order: 3;
+}
+
+/* Agrega estilos para los íconos */
+footer i, footer svg {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+/* Establece tamaños específicos para cada icono si es necesario */
+footer .fab {
+    font-size: 24px;
+}
+
+footer svg[xmlns="http://www.w3.org/2000/svg"][viewBox="0 0 512 512"] {
+    font-size: 24px;
+}
+
+/* Agrega estilos para los títulos de sección */
+footer h3 {
+    color: #fff;
+    margin-bottom: 10px;
 }
