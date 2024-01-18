@@ -1,72 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
+<html lang="es">
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-    <title>Hello World!</title>
+<body>
 
-    <!-- The website stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- The website JavaScript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <h1 class="title">Hello World!</h1>
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <div class="instructions">
-          <h2>Using this project</h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out the code in the editor and open
-            the <span class="fileopener" data-file="TODO.md" data-line="0"
-              >TODO</span> for next steps!
-          </p>
-          <!--  🚧 TODO: ADD BUTTON HERE -->
-
-          <!-- Once you've added the button from TODO.md, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
+    <!-- Encabezado -->
+    <header>
+        <div>
+            <img src="logo.png" alt="Logo de la Inmobiliaria XYZ">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#propiedades">Propiedades</a></li>
+                    <li><a href="#acerca-de">Acerca de Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <!-- Agrega más enlaces según sea necesario -->
+                </ul>
+            </nav>
+            <!-- Agrega botones de inicio de sesión o registro si es necesario -->
         </div>
-      </div>
-    </div>
-    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
+    </header>
+
+    <!-- Página de Inicio -->
+    <section id="inicio">
+        <!-- Sección de Destacados -->
+        <div>
+            <!-- Carrusel o galería de imágenes -->
+            <h2>Propiedades Destacadas</h2>
+            <!-- Breve descripción y enlaces rápidos -->
+            <a href="#propiedades" class="cta-button">Explorar Propiedades</a>
+        </div>
+        <!-- Servicios Destacados -->
+        <div>
+            <h2>Servicios Destacados</h2>
+            <!-- Lista de servicios -->
+        </div>
+        <!-- Llamada a la Acción -->
+        <div>
+            <h2>¿Listo para encontrar tu hogar?</h2>
+            <a href="#contacto" class="cta-button">Contáctanos</a>
+        </div>
+    </section>
+
+    <!-- Catálogo de Propiedades -->
+    <section id="propiedades">
+        <!-- Filtros de Búsqueda -->
+        <div>
+            <!-- Formulario de búsqueda -->
+        </div>
+        <!-- Listado de Propiedades -->
+        <div>
+            <!-- Cuadrícula o lista de propiedades -->
+        </div>
+    </section>
+
+    <!-- Páginas Individuales de Propiedades -->
+    <!-- Puedes generar dinámicamente estas páginas desde tu base de datos -->
+
+    <!-- Acerca de Nosotros -->
+    <section id="acerca-de">
+        <!-- Historia de la Inmobiliaria -->
+        <div>
+            <h2>Nuestra Historia</h2>
+            <!-- Breve historia y valores -->
+        </div>
+        <!-- Equipo -->
+        <div>
+            <h2>Nuestro Equipo</h2>
+            <!-- Presentación del equipo con fotos y perfiles -->
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto">
+        <!-- Formulario de consulta -->
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios">
+        <!-- Comentarios de clientes satisfechos -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Información de contacto -->
+        <div>
+            <p>Dirección: 123 Calle Principal, Ciudad</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Correo Electrónico: info@inmobiliariaxyz.com</p>
+        </div>
+    
+        <!-- Enlaces Rápidos -->
+        <div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#propiedades">Propiedades</a></li>
+                <li><a href="#acerca-de">Acerca de Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    
+        <!-- Iconos de Redes Sociales -->
+        <div>
+            <a href="enlace-easy-broker"><i class="fab fa-easy-broker"></i></a>
+            <a href="enlace-facebook"><i class="fab fa-facebook"></i></a>
+            <a href="enlace-instagram"><i class="fab fa-instagram"></i></a>
+            <a href="enlace-youtube"><i class="fab fa-youtube"></i></a>
+            <a href="enlace-whatsapp"><i class="fab fa-wh"></i></a>
+        </div>
     </footer>
-  </body>
+
+    <!-- Enlaza tu JavaScript aquí (opcional) -->
+
+</body>
+
 </html>
