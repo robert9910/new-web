@@ -184,6 +184,11 @@ a:hover {
 
 #footer ul {
   list-style-type: none;
+  padding: 0;
+}
+
+#footer li {
+  margin-bottom: 10px;
 }
 
 #footer a {
