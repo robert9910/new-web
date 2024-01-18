@@ -22,22 +22,23 @@ header {
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en dispositivos pequeños */
 }
 
-/* Logo */
+/* Logo a la izquierda */
 .logo-container {
-    display: flex;
-    align-items: center;
+    order: 1; /* Cambia el orden para que aparezca primero en dispositivos pequeños */
+    margin-right: 20px; /* Añade un espacio entre el logo y el contenido a la derecha */
 }
 
-.logo-container img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 60px; /* Ajusta el valor según tus necesidades */
-    background: none;
-    margin-right: 20px; /* Agrega un espacio entre el logo y el contenido a la derecha */
+header img {
+    max-width: 80px; /* Ajusta el ancho máximo según tus preferencias */
+    height: auto; /* Mantiene la proporción original del logo */
+    margin-bottom: 10px; /* Añade espacio debajo del logo */
 }
 
-/* Navegación */
+/* Navegación a la derecha */
+nav {
+    order: 2; /* Cambia el orden para que aparezca segundo en dispositivos pequeños */
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -53,7 +54,6 @@ nav a {
     color: #fff;
     font-weight: bold;
 }
-
 /* Sección de Destacados */
 section {
     padding: 20px;
