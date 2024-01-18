@@ -6,36 +6,42 @@ body {
     box-sizing: border-box;
 }
 
-/* Logo */
-header img {
-    max-width: 100%;
-    max-height: 80px; /* Ajusta el valor según tus necesidades */
-    height: auto;
-    background: none;
-}
-
-header, section, footer {
-    margin: 0; /* Establece el margen a 0 para eliminar espacios a los lados */
-}
-
 /* Encabezado */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #000; /* Cambia a color negro (#000) */
+    color: #fff; /* Cambia a color blanco (#fff) */
+    padding: 10px 20px; /* Aumenta el relleno para mejorar la apariencia */
+    text-align: center; /* Centra el contenido */
 }
 
-header div {
+/* Contenedor principal del encabezado */
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en dispositivos pequeños */
 }
 
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 60px; /* Ajusta el valor según tus necesidades */
+    background: none;
+    margin-right: 20px; /* Agrega un espacio entre el logo y el contenido a la derecha */
+}
+
+/* Navegación */
 nav ul {
     list-style: none;
     display: flex;
-    margin-top: 10px;
+    margin-top: 10px; /* Agrega un espacio en la parte superior de los enlaces de navegación */
 }
 
 nav ul li {
@@ -46,13 +52,6 @@ nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-}
-
-/* Logo */
-header img {
-    max-width: 100%; /* Asegura que la imagen del logo no sobrepase el ancho del contenedor */
-    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
-    background: none; /* Elimina cualquier fondo en la imagen */
 }
 
 /* Sección de Destacados */
@@ -109,7 +108,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    position: relative;
+    position: relative; /* Añade posición relativa */
 }
 
 /* Establece el fondo negro para que se extienda por todo el ancho de la pantalla */
@@ -121,26 +120,35 @@ footer:before {
     width: 100%;
     height: 100%;
     background-color: #333;
-    z-index: -1;
+    z-index: -1; /* Coloca el fondo detrás del contenido del footer */
 }
 
+/* Contenido del footer */
+footer .footer-content {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+}
+
+/* Sección de información de contacto */
 footer .contact-info,
 footer .social-icons {
     flex: 1 1 100%;
     margin-bottom: 20px;
 }
 
+/* Sección de íconos sociales */
 footer .social-icons {
     order: 3;
 }
 
-/* Agrega estilos para los íconos */
-footer i, footer svg {
+/* Estilos para los íconos */
+footer i,
+footer svg {
     font-size: 24px;
     margin-right: 5px;
 }
 
-/* Establece tamaños específicos para cada icono si es necesario */
+/* Establece tamaños específicos para cada ícono si es necesario */
 footer .fab {
     font-size: 24px;
 }
@@ -149,7 +157,7 @@ footer svg[xmlns="http://www.w3.org/2000/svg"][viewBox="0 0 512 512"] {
     font-size: 24px;
 }
 
-/* Agrega estilos para los títulos de sección */
+/* Estilos para los títulos de sección */
 footer h3 {
     color: #fff;
     margin-bottom: 10px;
