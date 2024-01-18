@@ -6,6 +6,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header, section, footer {
+            margin: 20px;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        header div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Sección de Destacados */
+        section {
+            padding: 20px;
+        }
+
+        section h2 {
+            color: #333;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        /* Catálogo de Propiedades */
+        #propiedades {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* Acerca de Nosotros */
+        #acerca-de {
+            padding: 20px;
+        }
+
+        #acerca-de h2 {
+            color: #333;
+        }
+
+        /* Formulario de Contacto */
+        #contacto {
+            padding: 20px;
+        }
+
+        /* Testimonios */
+        #testimonios {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        footer .contact-info {
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+        footer .social-icons {
+            flex: 1;
+        }
+
+        /* Agrega estilos para los íconos */
+        footer i, footer svg {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        /* Establece tamaños específicos para cada icono si es necesario */
+        footer .fab {
+            font-size: 24px;
+        }
+
+        footer svg[xmlns="http://www.w3.org/2000/svg"][viewBox="0 0 512 512"] {
+            font-size: 24px;
+        }
+
+        /* Agrega estilos para los títulos de sección */
+        footer h3 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -90,29 +217,22 @@
     <!-- Footer -->
     <footer>
         <!-- Información de contacto -->
-        <div>
+        <div class="contact-info">
+            <h3>Contáctanos</h3>
             <p>Dirección: 123 Calle Principal, Ciudad</p>
             <p>Teléfono: (123) 456-7890</p>
             <p>Correo Electrónico: info@inmobiliariaxyz.com</p>
         </div>
-    
-        <!-- Enlaces Rápidos -->
-        <div>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#propiedades">Propiedades</a></li>
-                <li><a href="#acerca-de">Acerca de Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
-    
+
+
         <!-- Iconos de Redes Sociales -->
-        <div>
+        <div class="social-icons">
+            <h3>Síguenos en nuestras redes sociales</h3>
             <a href="enlace-easy-broker"><i class="fab fa-easy-broker"></i></a>
             <a href="enlace-facebook"><i class="fab fa-facebook"></i></a>
             <a href="enlace-instagram"><i class="fab fa-instagram"></i></a>
             <a href="enlace-youtube"><i class="fab fa-youtube"></i></a>
-            <a href="enlace-whatsapp"><i class="fab fa-wh"></i></a>
+            <a href="enlace-whatsapp"><i class="fab fa-whatsapp"></i></a>
         </div>
     </footer>
 

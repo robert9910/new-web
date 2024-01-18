@@ -1,5 +1,4 @@
 /* Estilos Generales */
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -12,7 +11,6 @@ header, section, footer {
 }
 
 /* Encabezado */
-
 header {
     background-color: #333;
     color: #fff;
@@ -41,7 +39,6 @@ nav a {
 }
 
 /* Sección de Destacados */
-
 section {
     padding: 20px;
 }
@@ -61,18 +58,12 @@ section h2 {
 }
 
 /* Catálogo de Propiedades */
-
 #propiedades {
     background-color: #f4f4f4;
     padding: 20px;
 }
 
-/* Páginas Individuales de Propiedades */
-
-/* Estiliza según sea necesario */
-
 /* Acerca de Nosotros */
-
 #acerca-de {
     padding: 20px;
 }
@@ -82,40 +73,43 @@ section h2 {
 }
 
 /* Formulario de Contacto */
-
 #contacto {
     padding: 20px;
 }
 
 /* Testimonios */
-
 #testimonios {
     background-color: #f4f4f4;
     padding: 20px;
 }
 
 /* Footer */
-
 footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-footer div {
+footer .contact-info {
+    flex: 1; /* Distribuye el espacio disponible entre los divs */
     margin-bottom: 20px;
 }
 
-/* Agrega estilos para los íconos */
+footer .social-icons {
+    flex: 1; /* Distribuye el espacio disponible entre los divs */
+}
 
+/* Agrega estilos para los íconos */
 footer i, footer svg {
     font-size: 24px; /* Tamaño predeterminado para todos los iconos */
     margin-right: 5px;
 }
 
 /* Establece tamaños específicos para cada icono si es necesario */
-
 footer .fab {
     font-size: 24px; /* Ajusta el tamaño según tus preferencias */
 }
