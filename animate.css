@@ -1,88 +1,102 @@
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Homestate — Free Responsive HTML5 Template</title>
-    <meta name="description" content="Free HTML5 Template by FREEHTML5.CO">
-    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive">
-    <meta name="author" content="FREEHTML5.CO">
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <div class="container">
+        <img class="logo" src="https://cdn.glitch.global/a30930c7-ab63-44d7-9a13-39ccc5620b7a/logohouse-removebg-preview.png?v=1705618006331" alt="Logo de la Inmobiliaria XYZ" />
+        <nav>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#propiedades">Propiedades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <!-- Agrega más enlaces según sea necesario -->
+          </ul>
+        </nav>
+        <!-- Agrega botones de inicio de sesión o registro si es necesario -->
+      </div>
+    </header>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,300" rel="stylesheet" type="text/css">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" href="bootstrap.css">
-
-    <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
-
-    <!-- Respond JS for IE9 below -->
-    <!--[if lt IE 9]>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-    <div id="fh5co-wrapper">
-        <div id="fh5co-page">
-            <header id="fh5co-header-section" class="sticky-banner">
-                <!-- Navigation -->
-                <div class="container">
-                    <div class="nav-header">
-                        <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-                        <h1 id="fh5co-logo">
-                            <a href="index.html"><i class="icon-home"></i>Home<span>state</span></a>
-                        </h1>
-                        <!-- Navigation Menu -->
-                        <nav id="fh5co-menu-wrap" role="navigation">
-                            <ul class="sf-menu" id="fh5co-primary-menu">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li>
-                                    <a href="properties.html" class="fh5co-sub-ddown">Properties</a>
-                                    <ul class="fh5co-sub-menu">
-                                        <li><a href="#">Family</a></li>
-                                        <li><a href="#">CSS3 &amp; HTML5</a></li>
-                                        <li><a href="#">Angular JS</a></li>
-                                        <li><a href="#">Node JS</a></li>
-                                        <li><a href="#">Django &amp; Python</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="agent.html">Agent</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </header>
-
-            <!-- Hero Section -->
-            <aside id="fh5co-hero" class="js-fullheight">
-                <!-- Slider Content -->
-            </aside>
-
-            <!-- Popular Properties Section -->
-            <div id="fh5co-popular-properties" class="fh5co-section-gray">
-                <!-- Content for Popular Properties -->
-            </div>
-
-            <!-- Newest Properties Section -->
-            <div id="fh5co-properties" class="fh5co-section-gray">
-                <!-- Content for Newest Properties -->
-            </div>
-
-            <!-- Contact Section -->
-            <div id="fh5co-contact" class="fh5co-contact">
-                <!-- Contact Form and Information -->
-            </div>
-
-            <!-- Footer Section -->
-            <footer>
-                <!-- Footer Content -->
-            </footer>
-        </div>
+    <!-- Carrusel de Imágenes -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="imagen1.jpg" alt="Imagen 1" /></div>
+        <div class="swiper-slide"><img src="imagen2.jpg" alt="Imagen 2" /></div>
+        <div class="swiper-slide"><img src="imagen3.jpg" alt="Imagen 3" /></div>
+        <!-- Agrega más slides según sea necesario -->
+      </div>
+      <!-- Agrega la paginación del carrusel -->
+      <div class="swiper-pagination"></div>
+      <!-- Agrega la navegación del carrusel -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto">
+      <!-- Formulario de consulta -->
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios">
+      <!-- Comentarios de clientes satisfechos -->
+    </section>
+    
+      <div class="cta-rectangle">
+    <p>¿Estás listo para descubrir tu nueva propiedad?</p>
+    <a href="#propiedades-venta" class="cta-button">Propiedades en Venta</a>
+    <a href="#propiedades-renta" class="cta-button">Propiedades en Renta</a>
+  </div>
+
+
+    <!-- Footer -->
+    <footer>
+      <!-- Información de contacto -->
+      <div class="contact-info">
+        <h3>Contáctame</h3>
+        <p>Dirección: 123 Calle Principal, Ciudad</p>
+        <p>Teléfono: (123) 456-7890</p>
+        <p>Correo Electrónico: info@inmobiliariaxyz.com</p>
+      </div>
+
+      <!-- Iconos de Redes Sociales -->
+      <div class="social-icons">
+        <h3>Mis redes sociales</h3>
+        <a href="enlace-easy-broker"><i class="fab fa-easy-broker"></i></a>
+        <a href="enlace-facebook"><i class="fab fa-facebook"></i></a>
+        <a href="enlace-instagram"><i class="fab fa-instagram"></i></a>
+        <a href="enlace-youtube"><i class="fab fa-youtube"></i></a>
+        <a href="enlace-whatsapp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </footer>
+
+    <!-- Enlaza tu JavaScript aquí -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

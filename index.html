@@ -8,14 +8,22 @@
       href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <!-- Encabezado -->
-     <header>
+    <header>
       <div class="container">
-        <img class="logo" src="https://cdn.glitch.global/a30930c7-ab63-44d7-9a13-39ccc5620b7a/logohouse-removebg-preview.png?v=1705618006331" alt="Logo de la Inmobiliaria XYZ" />
+        <img
+          class="logo"
+          src="https://cdn.glitch.global/a30930c7-ab63-44d7-9a13-39ccc5620b7a/logohouse-removebg-preview.png?v=1705618006331"
+          alt="Logo de la Inmobiliaria XYZ"
+        />
         <nav>
           <ul>
             <li><a href="#inicio">Inicio</a></li>
@@ -28,55 +36,20 @@
       </div>
     </header>
 
-    <!-- Página de Inicio -->
-    <section id="inicio">
-      <!-- Sección de Destacados -->
-      <div>
-        <!-- Carrusel o galería de imágenes -->
-        <h2>Propiedades Destacadas</h2>
-        <!-- Breve descripción y enlaces rápidos -->
-        <a href="#propiedades" class="cta-button">Explorar Propiedades</a>
+    <!-- Carrusel de Imágenes -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://cdn.glitch.global/a30930c7-ab63-44d7-9a13-39ccc5620b7a/medium_EB-NI2787.jpg?v=1705703378516" alt="Imagen 1" /></div>
+        <div class="swiper-slide"><img src="https://cdn.glitch.global/a30930c7-ab63-44d7-9a13-39ccc5620b7a/medium_EB-OD8845.jpeg?v=1705703378516" alt="Imagen 2" /></div>
+        <div class="swiper-slide"><img src="imagen3.jpg" alt="Imagen 3" /></div>
+        <!-- Agrega más slides según sea necesario -->
       </div>
-      <!-- Servicios Destacados -->
-      <div>
-        <h2>Servicios Destacados</h2>
-        <!-- Lista de servicios -->
-      </div>
-      <!-- Llamada a la Acción -->
-      <div>
-        <h2>¿Listo para encontrar tu hogar?</h2>
-        <a href="#contacto" class="cta-button">Contáctanos</a>
-      </div>
-    </section>
-
-    <!-- Catálogo de Propiedades -->
-    <section id="propiedades">
-      <!-- Filtros de Búsqueda -->
-      <div>
-        <!-- Formulario de búsqueda -->
-      </div>
-      <!-- Listado de Propiedades -->
-      <div>
-        <!-- Cuadrícula o lista de propiedades -->
-      </div>
-    </section>
-
-    <!-- Páginas Individuales de Propiedades -->
-    <!-- Puedes generar dinámicamente estas páginas desde tu base de datos -->
-
-    <!-- Acerca de Nosotros -->
-    <section id="acerca-de">
-      <!-- Historia de la Inmobiliaria -->
-      <div>
-        <h2>Nuestra Historia</h2>
-        <!-- Breve historia y valores -->
-      </div>
-      <!-- Equipo -->
-      <div>
-        <h2>Nuestro Equipo</h2>
-        <!-- Presentación del equipo con fotos y perfiles -->
-      </div>
-    </section>
+      <!-- Agrega la paginación del carrusel -->
+      <div class="swiper-pagination"></div>
+      <!-- Agrega la navegación del carrusel -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
 
     <!-- Formulario de Contacto -->
     <section id="contacto">
@@ -88,6 +61,12 @@
       <!-- Comentarios de clientes satisfechos -->
     </section>
 
+    <div class="cta-rectangle">
+      <p>¿Estás listo para descubrir tu nueva propiedad?</p>
+      <a href="#propiedades-venta" class="cta-button">Propiedades en Venta</a>
+      <a href="#propiedades-renta" class="cta-button">Propiedades en Renta</a>
+    </div>
+
     <!-- Footer -->
     <footer>
       <!-- Información de contacto -->
@@ -97,7 +76,6 @@
         <p>Teléfono: (123) 456-7890</p>
         <p>Correo Electrónico: info@inmobiliariaxyz.com</p>
       </div>
-
 
       <!-- Iconos de Redes Sociales -->
       <div class="social-icons">
@@ -109,6 +87,22 @@
         <a href="enlace-whatsapp"><i class="fab fa-whatsapp"></i></a>
       </div>
     </footer>
-    <!-- Enlaza tu JavaScript aquí (opcional) -->
+
+    <!-- Enlaza tu JavaScript aquí -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

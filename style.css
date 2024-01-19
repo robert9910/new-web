@@ -2,11 +2,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
+  color: #fff; /* Cambia el color del texto a blanco */
+  background-color: #333; /* Cambia el color de fondo a negro */
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #fff; /* Cambia el color de fondo a blanco */
+  color: #333; /* Cambia el color del texto a negro */
   padding: 10px 0;
 }
 
@@ -33,7 +35,7 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: #333; /* Cambia el color del texto a negro */
   font-weight: bold;
   font-size: 16px;
 }
@@ -46,7 +48,7 @@ nav a {
 
   .logo {
     margin-bottom: 10px;
-    margin-top: 10px; /* Añade un margen superior para centrar */
+    margin-top: 10px;
   }
 
   nav ul {
@@ -58,58 +60,93 @@ nav a {
     margin-bottom: 10px;
   }
 }
+
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    position: relative; /* Añade posición relativa */
-    margin-top: auto; /* Añade margen superior automático para ajustarse al final de la página */
+  background-color: #fff; /* Cambia el color de fondo a blanco */
+  color: #333; /* Cambia el color del texto a negro */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  margin-top: auto;
 }
 
-/* Establece el fondo negro para que se extienda por todo el ancho de la pantalla */
+/* Establece el fondo blanco */
 footer:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    z-index: -1; /* Coloca el fondo detrás del contenido del footer */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333; /* Cambia el color de fondo a negro */
+  z-index: -1;
 }
 
 footer .contact-info,
 footer .social-icons {
-    flex: 1 1 100%;
-    margin-bottom: 20px;
+  flex: 1 1 100%;
+  margin-bottom: 20px;
 }
 
 footer .social-icons {
-    order: 3;
+  order: 3;
 }
 
 /* Agrega estilos para los íconos */
-footer i, footer svg {
-    font-size: 24px;
-    margin-right: 5px;
+footer i,
+footer svg {
+  font-size: 24px;
+  margin-right: 5px;
 }
 
 /* Establece tamaños específicos para cada icono si es necesario */
 footer .fab {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 footer svg[xmlns="http://www.w3.org/2000/svg"][viewBox="0 0 512 512"] {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 /* Agrega estilos para los títulos de sección */
 footer h3 {
-    color: #fff;
-    margin-bottom: 10px;
+  color: #333; /* Cambia el color del texto a negro */
+  margin-bottom: 10px;
+}
+
+/* Estilos para el nuevo rectángulo de llamada a la acción */
+.cta-rectangle {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cta-rectangle p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+/* Media Query para hacer los botones responsivos */
+@media screen and (max-width: 768px) {
+  .cta-button {
+    display: block;
+    margin: 10px auto;
+  }
 }
