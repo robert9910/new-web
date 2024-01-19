@@ -3,7 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
@@ -14,6 +27,7 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   </head>
 
   <body>
@@ -43,29 +57,20 @@
     </div>
 
     <!-- Carrusel de Imágenes -->
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img
-            src="https://cdn.glitch.global/a30930c7-ab63-44d7-9a13-39ccc5620b7a/medium_EB-NI2787.jpg?v=1705703378516"
-            alt="Imagen 1"
-          />
+    <section id="propiedades">
+      <div class="propiedades-slider">
+        <div>
+          <img src="https://cdn.glitch.global/a30930c7-ab63-44d7-9a13-39ccc5620b7a/medium_EB-NI2787.jpg?v=1705703378516" alt="Propiedad 1" />
         </div>
-        <div class="swiper-slide">
-          <img
-            src="https://cdn.glitch.global/a30930c7-ab63-44d7-9a13-39ccc5620b7a/medium_EB-OD8845.jpeg?v=1705703378516"
-            alt="Imagen 2"
-          />
+        <div>
+          <img src="https://cdn.glitch.global/a30930c7-ab63-44d7-9a13-39ccc5620b7a/medium_EB-OD8845.jpeg?v=1705703378516" alt="Propiedad 2" />
         </div>
-        <div class="swiper-slide">
-          <img
-            src="https://cdn.glitch.global/a30930c7-ab63-44d7-9a13-39ccc5620b7a/medium_EB-OW9091.jpeg?v=1705703379481"
-            alt="Imagen 3"
-          />
+        <div>
+          <img src="https://cdn.glitch.global/a30930c7-ab63-44d7-9a13-39ccc5620b7a/medium_EB-OW9091.jpeg?v=1705703379481" alt="Propiedad 3" />
         </div>
-        <!-- Agrega más slides según sea necesario -->
+        <!-- Agrega más elementos div según sea necesario -->
       </div>
-    </div>
+    </section>
 
     <!-- Formulario de Contacto -->
     <section id="contacto">
@@ -105,23 +110,19 @@
     </footer>
 
     <!-- Enlaza tu JavaScript aquí -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
     <script>
-      var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        autoplay: {
-          delay: 5000, // Tiempo en milisegundos (5 segundos en este caso)
-        },
-        loop: true, // Repetir el carrusel
+      $(document).ready(function () {
+        $(".propiedades-slider").slick({
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: true,
+          arrows: false,
+        });
       });
     </script>
   </body>
