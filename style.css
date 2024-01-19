@@ -2,14 +2,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  color: #fff; /* Cambia el color del texto a blanco */
-  background-color: #333; /* Cambia el color de fondo a negro */
+  color: #fff;
+  background-color: #333;
 }
 
 header {
-  background-color: #fff; /* Cambia el color de fondo a blanco */
-  color: #333; /* Cambia el color del texto a negro */
+  background-color: #fff;
+  color: #333;
   padding: 10px 0;
+  margin: 0;
 }
 
 .container {
@@ -17,6 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  margin: 0;
 }
 
 .logo {
@@ -27,6 +29,8 @@ header {
 nav ul {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
@@ -35,7 +39,7 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: #333; /* Cambia el color del texto a negro */
+  color: #333;
   font-weight: bold;
   font-size: 16px;
 }
@@ -61,40 +65,10 @@ nav a {
   }
 }
 
-/* Estilos para la sección de bienvenida */
-.welcome-message {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
-}
-
-.welcome-message h1 {
-  font-size: 24px;
-  margin: 0;
-}
-
-/* Carrusel de Imágenes */
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  max-width: 100%; /* Asegura que la imagen no supere el ancho del slide */
-  height: auto; /* Permite que la altura se ajuste automáticamente */
-}
-
 /* Footer */
 footer {
-  background-color: #fff; /* Cambia el color de fondo a blanco */
-  color: #333; /* Cambia el color del texto a negro */
+  background-color: #fff;
+  color: #333;
   padding: 20px;
   text-align: center;
   display: flex;
@@ -102,6 +76,7 @@ footer {
   justify-content: space-around;
   position: relative;
   margin-top: auto;
+  margin: 0;
 }
 
 /* Establece el fondo blanco */
@@ -112,7 +87,7 @@ footer:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #333; /* Cambia el color de fondo a negro */
+  background-color: #333;
   z-index: -1;
 }
 
@@ -144,7 +119,7 @@ footer svg[xmlns="http://www.w3.org/2000/svg"][viewBox="0 0 512 512"] {
 
 /* Agrega estilos para los títulos de sección */
 footer h3 {
-  color: #333; /* Cambia el color del texto a negro */
+  color: #333;
   margin-bottom: 10px;
 }
 
@@ -155,6 +130,7 @@ footer h3 {
   padding: 20px;
   text-align: center;
   margin-top: 20px;
+  margin: 0;
 }
 
 .cta-rectangle p {
@@ -179,4 +155,35 @@ footer h3 {
     display: block;
     margin: 10px auto;
   }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.welcome-message {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+}
+
+.welcome-message h1 {
+  font-size: 24px;
+  margin: 0;
 }
