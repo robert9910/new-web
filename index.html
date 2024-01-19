@@ -39,9 +39,15 @@
     <!-- Carrusel de Imágenes -->
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="https://cdn.glitch.global/a30930c7-ab63-44d7-9a13-39ccc5620b7a/medium_EB-NI2787.jpg?v=1705703378516" alt="Imagen 1" /></div>
-        <div class="swiper-slide"><img src="https://cdn.glitch.global/a30930c7-ab63-44d7-9a13-39ccc5620b7a/medium_EB-OD8845.jpeg?v=1705703378516" alt="Imagen 2" /></div>
-        <div class="swiper-slide"><img src="imagen3.jpg" alt="Imagen 3" /></div>
+        <div class="swiper-slide">
+          <img src="https://cdn.glitch.global/a30930c7-ab63-44d7-9a13-39ccc5620b7a/medium_EB-NI2787.jpg?v=1705703378516" alt="Imagen 1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://cdn.glitch.global/a30930c7-ab63-44d7-9a13-39ccc5620b7a/medium_EB-OD8845.jpeg?v=1705703378516" alt="Imagen 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://cdn.glitch.global/a30930c7-ab63-44d7-9a13-39ccc5620b7a/medium_EB-OW9091.jpeg?v=1705703379481" alt="Imagen 3" />
+        </div>
         <!-- Agrega más slides según sea necesario -->
       </div>
       <!-- Agrega la paginación del carrusel -->
@@ -102,6 +108,10 @@
           el: ".swiper-pagination",
           clickable: true,
         },
+        autoplay: {
+          delay: 5000, // Tiempo en milisegundos (5 segundos en este caso)
+        },
+        loop: true, // Repetir el carrusel
       });
     </script>
   </body>

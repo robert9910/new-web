@@ -150,3 +150,19 @@ footer h3 {
     margin: 10px auto;
   }
 }
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-width: 100%; /* Asegura que la imagen no supere el ancho del slide */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+}
