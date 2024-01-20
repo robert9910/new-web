@@ -52,12 +52,15 @@ nav a {
 
 .propiedad {
   width: 300px;
+  height: 368px; /* Ajusta la altura según sea necesario */
   margin: 20px;
+  overflow: hidden; /* Para evitar que las imágenes se salgan del cuadro */
 }
 
 .propiedad img {
   width: 100%;
   height: auto;
+  object-fit: cover; /* Para mantener la relación de aspecto de la imagen */
 }
 
 .propiedad h3 {
