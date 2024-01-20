@@ -1,0 +1,99 @@
+/* Reset de estilos y estilos básicos */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Título de la Página */
+.welcome-message {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Listado de Propiedades en Venta */
+#propiedades-venta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.propiedad {
+  width: 300px;
+  margin: 20px;
+}
+
+.propiedad img {
+  width: 100%;
+  height: auto;
+}
+
+.propiedad h3 {
+  margin: 10px 0;
+}
+
+.propiedad p {
+  color: #333;
+  font-weight: bold;
+}
+
+.propiedad a {
+  display: block;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contact-info h3,
+.social-icons h3 {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #fff;
+}
