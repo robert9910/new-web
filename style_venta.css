@@ -5,26 +5,31 @@ body {
   padding: 0;
 }
 
-/* Encabezado */
 header {
   background-color: #333;
-  color: #fff;
+  color: #333;
   padding: 10px 0;
+  margin: 0;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
+  margin: 0;
 }
 
 .logo {
-  max-width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+  max-width: 150px;
+  height: auto;
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
@@ -34,8 +39,30 @@ nav ul li {
 nav a {
   text-decoration: none;
   color: #fff;
+  font-weight: bold;
+  font-size: 16px;
 }
 
+/* Media Queries para hacer el header responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
 /* Título de la Página */
 .welcome-message {
   background-color: #f5f5f5;
